@@ -4,3 +4,4 @@ tests/.pytest_cache/
 __pycache__/
 index_exporter/__pycache__/
 .pytest_cache/
+/anomaly_detector/loans.xlsx

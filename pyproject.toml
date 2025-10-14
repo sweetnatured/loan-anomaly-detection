@@ -2,11 +2,19 @@
 name = "loan-anomaly-detection"
 version = "0.1.0"
 description = ""
-authors = ["Beskardes, Salih <salih.beskardes@solactive.com>"]
+authors = ["Beskardes, Salih <beskardessalih@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+openpyxl = "~3"
+typer = "~0"
+
+[tool.poetry.group.dev.dependencies]
+deptry = "~0"
+flake8 = "~6"
+mypy = "~1"
+pytest = "~8"
 
 
 [build-system]
