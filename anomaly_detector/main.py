@@ -35,8 +35,15 @@ def main(
     configure_logging(logging_format, logging_level)
 
     loan_parser = XLSXLoanParser(dry_run=dry_run)
-    parsed_loans = loan_parser.parse_for(Path("loans.xlsx"))
-    x = 5
+    parsed_loans = loan_parser.parse_for(Path("loans_dummy.xlsx"))
+    validation_errors = []
+    for parsed_loan in parsed_loans:
+        validation_errors.append(parsed_loan.validate())
+
+    x = 10
+
+
+
 
 
 
