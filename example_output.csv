@@ -1,0 +1,483 @@
+loan_id,severity,code,field,message,value
+37216892,ERROR,DEFAULT,payments,Payment expired 112 days,payment date: 2023-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 112 days,payment date: 2023-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 142 days,payment date: 2023-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 142 days,payment date: 2023-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 173 days,payment date: 2023-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 173 days,payment date: 2023-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 203 days,payment date: 2023-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 203 days,payment date: 2023-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 234 days,payment date: 2024-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 234 days,payment date: 2024-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 265 days,payment date: 2024-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 265 days,payment date: 2024-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 294 days,payment date: 2024-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 294 days,payment date: 2024-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 325 days,payment date: 2024-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 325 days,payment date: 2024-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 355 days,payment date: 2024-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 355 days,payment date: 2024-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 386 days,payment date: 2024-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 386 days,payment date: 2024-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 416 days,payment date: 2024-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 416 days,payment date: 2024-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 447 days,payment date: 2024-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 447 days,payment date: 2024-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 478 days,payment date: 2024-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 478 days,payment date: 2024-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 508 days,payment date: 2024-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 508 days,payment date: 2024-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 539 days,payment date: 2024-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 539 days,payment date: 2024-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 569 days,payment date: 2024-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 569 days,payment date: 2024-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 600 days,payment date: 2025-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 600 days,payment date: 2025-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 631 days,payment date: 2025-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 631 days,payment date: 2025-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 659 days,payment date: 2025-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 659 days,payment date: 2025-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 690 days,payment date: 2025-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 690 days,payment date: 2025-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 720 days,payment date: 2025-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 720 days,payment date: 2025-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 751 days,payment date: 2025-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 751 days,payment date: 2025-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 781 days,payment date: 2025-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 781 days,payment date: 2025-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 812 days,payment date: 2025-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 812 days,payment date: 2025-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 843 days,payment date: 2025-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 843 days,payment date: 2025-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 873 days,payment date: 2025-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 873 days,payment date: 2025-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 904 days,payment date: 2025-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 904 days,payment date: 2025-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 934 days,payment date: 2025-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 934 days,payment date: 2025-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 965 days,payment date: 2026-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 965 days,payment date: 2026-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 996 days,payment date: 2026-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 996 days,payment date: 2026-02-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1024 days,payment date: 2026-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1024 days,payment date: 2026-03-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1055 days,payment date: 2026-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1055 days,payment date: 2026-04-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1085 days,payment date: 2026-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1085 days,payment date: 2026-05-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1116 days,payment date: 2026-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1116 days,payment date: 2026-06-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1146 days,payment date: 2026-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1146 days,payment date: 2026-07-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1177 days,payment date: 2026-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1177 days,payment date: 2026-08-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1208 days,payment date: 2026-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1208 days,payment date: 2026-09-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1238 days,payment date: 2026-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1238 days,payment date: 2026-10-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1269 days,payment date: 2026-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1269 days,payment date: 2026-11-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1299 days,payment date: 2026-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1299 days,payment date: 2026-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1330 days,payment date: 2027-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,DEFAULT,payments,Payment expired 1330 days,payment date: 2027-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 119 days,payment date: 2024-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 119 days,payment date: 2024-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 149 days,payment date: 2024-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 149 days,payment date: 2024-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 180 days,payment date: 2024-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 180 days,payment date: 2024-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 211 days,payment date: 2024-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 211 days,payment date: 2024-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 241 days,payment date: 2024-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 241 days,payment date: 2024-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 272 days,payment date: 2024-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 272 days,payment date: 2024-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 302 days,payment date: 2024-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 302 days,payment date: 2024-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 333 days,payment date: 2025-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 333 days,payment date: 2025-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 364 days,payment date: 2025-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 364 days,payment date: 2025-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 392 days,payment date: 2025-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 392 days,payment date: 2025-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 423 days,payment date: 2025-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 423 days,payment date: 2025-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 453 days,payment date: 2025-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 453 days,payment date: 2025-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 484 days,payment date: 2025-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 484 days,payment date: 2025-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 514 days,payment date: 2025-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 514 days,payment date: 2025-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 545 days,payment date: 2025-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 545 days,payment date: 2025-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 576 days,payment date: 2025-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 576 days,payment date: 2025-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 606 days,payment date: 2025-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 606 days,payment date: 2025-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 637 days,payment date: 2025-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 637 days,payment date: 2025-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 667 days,payment date: 2025-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 667 days,payment date: 2025-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 698 days,payment date: 2026-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 698 days,payment date: 2026-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 729 days,payment date: 2026-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 729 days,payment date: 2026-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 757 days,payment date: 2026-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 757 days,payment date: 2026-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 788 days,payment date: 2026-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 788 days,payment date: 2026-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 818 days,payment date: 2026-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 818 days,payment date: 2026-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 849 days,payment date: 2026-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 849 days,payment date: 2026-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 879 days,payment date: 2026-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 879 days,payment date: 2026-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 910 days,payment date: 2026-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 910 days,payment date: 2026-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 941 days,payment date: 2026-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 941 days,payment date: 2026-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 971 days,payment date: 2026-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 971 days,payment date: 2026-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1002 days,payment date: 2026-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1002 days,payment date: 2026-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1032 days,payment date: 2026-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1032 days,payment date: 2026-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1063 days,payment date: 2027-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1063 days,payment date: 2027-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1094 days,payment date: 2027-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1094 days,payment date: 2027-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1122 days,payment date: 2027-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1122 days,payment date: 2027-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1153 days,payment date: 2027-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1153 days,payment date: 2027-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1183 days,payment date: 2027-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1183 days,payment date: 2027-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1214 days,payment date: 2027-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1214 days,payment date: 2027-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1244 days,payment date: 2027-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1244 days,payment date: 2027-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1275 days,payment date: 2027-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1275 days,payment date: 2027-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1306 days,payment date: 2027-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1306 days,payment date: 2027-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1336 days,payment date: 2027-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1336 days,payment date: 2027-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1367 days,payment date: 2027-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1367 days,payment date: 2027-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1397 days,payment date: 2027-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1397 days,payment date: 2027-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1428 days,payment date: 2028-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1428 days,payment date: 2028-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1459 days,payment date: 2028-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1459 days,payment date: 2028-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1488 days,payment date: 2028-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1488 days,payment date: 2028-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1519 days,payment date: 2028-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1519 days,payment date: 2028-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1549 days,payment date: 2028-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1549 days,payment date: 2028-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1580 days,payment date: 2028-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1580 days,payment date: 2028-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1610 days,payment date: 2028-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1610 days,payment date: 2028-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1641 days,payment date: 2028-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1641 days,payment date: 2028-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1672 days,payment date: 2028-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1672 days,payment date: 2028-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1702 days,payment date: 2028-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1702 days,payment date: 2028-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1733 days,payment date: 2028-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1733 days,payment date: 2028-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1763 days,payment date: 2028-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1763 days,payment date: 2028-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1794 days,payment date: 2029-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1794 days,payment date: 2029-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1825 days,payment date: 2029-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1825 days,payment date: 2029-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1853 days,payment date: 2029-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1853 days,payment date: 2029-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1884 days,payment date: 2029-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1884 days,payment date: 2029-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1914 days,payment date: 2029-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1914 days,payment date: 2029-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1945 days,payment date: 2029-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1945 days,payment date: 2029-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1975 days,payment date: 2029-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 1975 days,payment date: 2029-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2006 days,payment date: 2029-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2006 days,payment date: 2029-08-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2037 days,payment date: 2029-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2037 days,payment date: 2029-09-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2067 days,payment date: 2029-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2067 days,payment date: 2029-10-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2098 days,payment date: 2029-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2098 days,payment date: 2029-11-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2128 days,payment date: 2029-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2128 days,payment date: 2029-12-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2159 days,payment date: 2030-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2159 days,payment date: 2030-01-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2190 days,payment date: 2030-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2190 days,payment date: 2030-02-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2218 days,payment date: 2030-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2218 days,payment date: 2030-03-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2249 days,payment date: 2030-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2249 days,payment date: 2030-04-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2279 days,payment date: 2030-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2279 days,payment date: 2030-05-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2310 days,payment date: 2030-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2310 days,payment date: 2030-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2340 days,payment date: 2030-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+99981632,ERROR,DEFAULT,payments,Payment expired 2340 days,payment date: 2030-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
+13752758,CLEAN,,,,
+19972183,CLEAN,,,,
+94863476,CLEAN,,,,
+17611322,ERROR,DEFAULT,payments,Payment expired 102 days,payment date: 2024-12-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 133 days,payment date: 2025-01-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 164 days,payment date: 2025-02-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 192 days,payment date: 2025-03-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 223 days,payment date: 2025-04-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 253 days,payment date: 2025-05-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 284 days,payment date: 2025-06-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 314 days,payment date: 2025-07-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 345 days,payment date: 2025-08-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 376 days,payment date: 2025-09-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 406 days,payment date: 2025-10-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 437 days,payment date: 2025-11-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 467 days,payment date: 2025-12-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 498 days,payment date: 2026-01-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 529 days,payment date: 2026-02-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 557 days,payment date: 2026-03-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 588 days,payment date: 2026-04-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 618 days,payment date: 2026-05-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 649 days,payment date: 2026-06-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 679 days,payment date: 2026-07-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 710 days,payment date: 2026-08-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,DEFAULT,payments,Payment expired 741 days,payment date: 2026-09-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 107 days,payment date: 2023-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 107 days,payment date: 2023-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 137 days,payment date: 2023-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 137 days,payment date: 2023-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 168 days,payment date: 2023-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 168 days,payment date: 2023-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 199 days,payment date: 2023-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 199 days,payment date: 2023-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 229 days,payment date: 2023-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 229 days,payment date: 2023-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 260 days,payment date: 2023-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 260 days,payment date: 2023-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 290 days,payment date: 2023-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 290 days,payment date: 2023-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 321 days,payment date: 2024-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 321 days,payment date: 2024-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 352 days,payment date: 2024-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 352 days,payment date: 2024-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 381 days,payment date: 2024-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 381 days,payment date: 2024-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 412 days,payment date: 2024-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 412 days,payment date: 2024-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 442 days,payment date: 2024-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 442 days,payment date: 2024-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 473 days,payment date: 2024-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 473 days,payment date: 2024-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 503 days,payment date: 2024-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 503 days,payment date: 2024-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 534 days,payment date: 2024-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 534 days,payment date: 2024-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 565 days,payment date: 2024-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 565 days,payment date: 2024-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 595 days,payment date: 2024-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 595 days,payment date: 2024-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 626 days,payment date: 2024-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 626 days,payment date: 2024-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 656 days,payment date: 2024-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 656 days,payment date: 2024-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 687 days,payment date: 2025-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 687 days,payment date: 2025-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 718 days,payment date: 2025-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 718 days,payment date: 2025-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 746 days,payment date: 2025-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 746 days,payment date: 2025-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 777 days,payment date: 2025-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 777 days,payment date: 2025-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 807 days,payment date: 2025-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 807 days,payment date: 2025-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 838 days,payment date: 2025-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 838 days,payment date: 2025-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 868 days,payment date: 2025-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 868 days,payment date: 2025-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 899 days,payment date: 2025-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 899 days,payment date: 2025-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 930 days,payment date: 2025-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 930 days,payment date: 2025-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 960 days,payment date: 2025-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 960 days,payment date: 2025-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 991 days,payment date: 2025-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 991 days,payment date: 2025-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1021 days,payment date: 2025-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1021 days,payment date: 2025-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1052 days,payment date: 2026-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1052 days,payment date: 2026-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1083 days,payment date: 2026-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1083 days,payment date: 2026-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1111 days,payment date: 2026-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1111 days,payment date: 2026-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1142 days,payment date: 2026-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1142 days,payment date: 2026-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1172 days,payment date: 2026-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1172 days,payment date: 2026-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1203 days,payment date: 2026-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1203 days,payment date: 2026-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1233 days,payment date: 2026-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1233 days,payment date: 2026-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1264 days,payment date: 2026-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1264 days,payment date: 2026-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1295 days,payment date: 2026-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1295 days,payment date: 2026-09-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1325 days,payment date: 2026-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1325 days,payment date: 2026-10-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1356 days,payment date: 2026-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1356 days,payment date: 2026-11-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1386 days,payment date: 2026-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1386 days,payment date: 2026-12-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1417 days,payment date: 2027-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1417 days,payment date: 2027-01-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1448 days,payment date: 2027-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1448 days,payment date: 2027-02-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1476 days,payment date: 2027-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1476 days,payment date: 2027-03-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1507 days,payment date: 2027-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1507 days,payment date: 2027-04-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1537 days,payment date: 2027-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1537 days,payment date: 2027-05-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1568 days,payment date: 2027-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1568 days,payment date: 2027-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1598 days,payment date: 2027-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1598 days,payment date: 2027-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1629 days,payment date: 2027-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,DEFAULT,payments,Payment expired 1629 days,payment date: 2027-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 99 days,payment date: 2024-12-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 130 days,payment date: 2025-01-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 161 days,payment date: 2025-02-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 189 days,payment date: 2025-03-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 220 days,payment date: 2025-04-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 250 days,payment date: 2025-05-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 281 days,payment date: 2025-06-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 311 days,payment date: 2025-07-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 342 days,payment date: 2025-08-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 373 days,payment date: 2025-09-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 403 days,payment date: 2025-10-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 434 days,payment date: 2025-11-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 464 days,payment date: 2025-12-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 495 days,payment date: 2026-01-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 526 days,payment date: 2026-02-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 554 days,payment date: 2026-03-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 585 days,payment date: 2026-04-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 615 days,payment date: 2026-05-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 646 days,payment date: 2026-06-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 676 days,payment date: 2026-07-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 707 days,payment date: 2026-08-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+35294697,ERROR,DEFAULT,payments,Payment expired 738 days,payment date: 2026-09-06 00:00:00 -- repayment date:2024-08-29 00:00:00
+36885572,CLEAN,,,,
+46313736,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-07-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 125 days,payment date: 2024-08-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 156 days,payment date: 2024-09-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 186 days,payment date: 2024-10-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 217 days,payment date: 2024-11-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 247 days,payment date: 2024-12-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 278 days,payment date: 2025-01-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 309 days,payment date: 2025-02-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 337 days,payment date: 2025-03-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 368 days,payment date: 2025-04-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 398 days,payment date: 2025-05-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 429 days,payment date: 2025-06-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 459 days,payment date: 2025-07-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 490 days,payment date: 2025-08-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 521 days,payment date: 2025-09-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 551 days,payment date: 2025-10-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 582 days,payment date: 2025-11-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 612 days,payment date: 2025-12-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 643 days,payment date: 2026-01-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 674 days,payment date: 2026-02-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 702 days,payment date: 2026-03-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 733 days,payment date: 2026-04-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 763 days,payment date: 2026-05-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 794 days,payment date: 2026-06-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+46313736,ERROR,DEFAULT,payments,Payment expired 824 days,payment date: 2026-07-14 00:00:00 -- repayment date:2024-04-11 00:00:00
+53926762,CLEAN,,,,
+56689556,CLEAN,,,,
+57949284,CLEAN,,,,
+58271697,ERROR,DEFAULT,payments,Payment expired 103 days,payment date: 2024-08-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 134 days,payment date: 2024-09-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 164 days,payment date: 2024-10-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 195 days,payment date: 2024-11-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 225 days,payment date: 2024-12-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 256 days,payment date: 2025-01-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 287 days,payment date: 2025-02-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 315 days,payment date: 2025-03-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 346 days,payment date: 2025-04-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 376 days,payment date: 2025-05-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 407 days,payment date: 2025-06-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 437 days,payment date: 2025-07-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 468 days,payment date: 2025-08-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 499 days,payment date: 2025-09-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+58271697,ERROR,DEFAULT,payments,Payment expired 529 days,payment date: 2025-10-19 00:00:00 -- repayment date:2024-05-08 00:00:00
+61752881,CLEAN,,,,
+65318525,CLEAN,,,,
+73224837,CLEAN,,,,
+73371141,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-03-16 00:00:00 -- repayment date:2023-12-13 00:00:00
+73371141,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-03-16 00:00:00 -- repayment date:2023-12-13 00:00:00
+76669736,CLEAN,,,,
+78579969,CLEAN,,,,
+79811839,CLEAN,,,,
+96579687,CLEAN,,,,
+58153155,CLEAN,,,,
+32271989,CLEAN,,,,
+13891862,CLEAN,,,,
+41531189,CLEAN,,,,
+35449965,CLEAN,,,,
+97751227,CLEAN,,,,
+62778129,CLEAN,,,,
+14146974,CLEAN,,,,
+74364775,CLEAN,,,,
+94976997,CLEAN,,,,
+26961823,CLEAN,,,,
+94273288,CLEAN,,,,
+57496522,CLEAN,,,,
+79362712,CLEAN,,,,
+82251944,CLEAN,,,,
+56721442,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+57248583,CLEAN,,,,
+97987259,ERROR,INVALID_DATE,appraisal_date,Date is not valid formatted,
+68531246,CLEAN,,,,
+96227257,CLEAN,,,,
+56595445,CLEAN,,,,
+51117775,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+86642894,CLEAN,,,,
+72457171,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+87152791,CLEAN,,,,
+35612451,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+35666371,CLEAN,,,,
+82522951,CLEAN,,,,
+83898441,CLEAN,,,,
+64933882,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+13314659,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+69683127,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+41222884,CLEAN,,,,
+53788773,CLEAN,,,,
+33817222,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+43365273,CLEAN,,,,
+28133318,CLEAN,,,,
+59768427,CLEAN,,,,
+66526158,CLEAN,,,,
+71317797,CLEAN,,,,
+43986823,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+25372336,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+34699374,CLEAN,,,,
+94146169,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+32742879,CLEAN,,,,
+26165342,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+95814762,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
+51247328,CLEAN,,,,
+13616691,CLEAN,,,,
+29492418,CLEAN,,,,

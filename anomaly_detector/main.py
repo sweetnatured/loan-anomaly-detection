@@ -37,15 +37,16 @@ def main(
 ) -> None:
     configure_logging(logging_format, logging_level)
 
-    loan_parser = XLSXLoanParser(dry_run=dry_run)
+    loan_parser = XLSXLoanParser()
     parsed_loans = loan_parser.parse_for(Path(file_path))
     validated_issues = []
     for parsed_loan in parsed_loans:
         validated_issues.append(parsed_loan.validate())
 
-    anomaly_reporter(validated_issues, Path(output_path))
+    anomaly_reporter(validated_issues, Path(output_path), dry_run)
 
     typer.echo("Process finished.")
+
 
 if __name__ == "__main__":
     typer.run(main)

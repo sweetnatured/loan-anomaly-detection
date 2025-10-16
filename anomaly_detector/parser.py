@@ -298,8 +298,8 @@ class LoanParser(abc.ABC):
 
 class XLSXLoanParser(LoanParser):
 
-    def __init__(self, dry_run: bool = False):
-        self.__dry_run = dry_run
+    def __init__(self):
+        ...
 
     def parse_for(self, file_path: Path) -> List[LoanRecord]:
         loan_file = load_workbook(file_path, data_only=True, read_only=True).active
