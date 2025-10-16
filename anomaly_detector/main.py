@@ -5,7 +5,7 @@ from typing import Type, Optional, Any
 from pathlib import Path
 
 from anomaly_detector.reporter import anomaly_reporter
-from parser import XLSXLoanParser
+from anomaly_detector.parser import XLSXLoanParser
 import typer
 
 app = typer.Typer(help="loan-anomaly-detector")
@@ -23,6 +23,7 @@ def configure_logging(fmt: str, level: str) -> None:
 
     sys.excepthook = log_uncaught_exception
 
+
 @app.command()
 def main(
         file_path: str = typer.Option(default=False, envvar="FILE_PATH"),
@@ -37,20 +38,14 @@ def main(
     configure_logging(logging_format, logging_level)
 
     loan_parser = XLSXLoanParser(dry_run=dry_run)
-    parsed_loans = loan_parser.parse_for(Path("loans.xlsx"))
+    parsed_loans = loan_parser.parse_for(Path(file_path))
     validated_issues = []
     for parsed_loan in parsed_loans:
         validated_issues.append(parsed_loan.validate())
 
     anomaly_reporter(validated_issues, Path(output_path))
 
-    x = 10
-
-
-
-
-
-
+    typer.echo("Process finished.")
 
 if __name__ == "__main__":
     typer.run(main)

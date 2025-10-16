@@ -7,8 +7,8 @@ from anomaly_detector.parser import Issue
 
 def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path):
 
-    with open("loan_anomalies.csv", "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["loan_id", "severity", "field", "message", "value"])
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["loan_id", "severity", "code", "field", "message", "value"])
         writer.writeheader()
         for issues_per_loan in validated_issues:
             for loan_id, issues in issues_per_loan.items():
@@ -16,6 +16,7 @@ def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path
                     for issue in issues:
                         writer.writerow({
                             "loan_id": loan_id,
+                            "code": issue.code,
                             "severity": issue.severity,
                             "field": issue.field,
                             "message": issue.message,
@@ -25,6 +26,7 @@ def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path
                 else:
                     writer.writerow({
                         "loan_id": loan_id,
+                        "code": '',
                         "severity": 'CLEAN',
                         "field": '',
                         "message": '',

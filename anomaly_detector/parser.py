@@ -83,7 +83,7 @@ COLLATERAL_MAP = {
     "guarantor title": "guarantor_title",
 }
 
-Severity = Literal["ERROR", "WARN", "INFO"]
+Severity = Literal["ERROR", "WARN", "INFO", "CLEAN"]
 
 
 @dataclass
@@ -151,7 +151,6 @@ class BorrowerInfo:
         if self.dti is not None:
             if self.dti < 0:
                 issues.append(Issue("DTI_NEGATIVE", "ERROR", "dti", "DTI cannot be negative.", self.dti))
-
 
         return issues
 
