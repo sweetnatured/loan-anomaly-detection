@@ -3,6 +3,8 @@ import sys
 from types import TracebackType
 from typing import Type, Optional, Any
 from pathlib import Path
+
+from anomaly_detector.reporter import anomaly_reporter
 from parser import XLSXLoanParser
 import typer
 
@@ -35,10 +37,12 @@ def main(
     configure_logging(logging_format, logging_level)
 
     loan_parser = XLSXLoanParser(dry_run=dry_run)
-    parsed_loans = loan_parser.parse_for(Path("loans_dummy.xlsx"))
-    validation_errors = []
+    parsed_loans = loan_parser.parse_for(Path("loans.xlsx"))
+    validated_issues = []
     for parsed_loan in parsed_loans:
-        validation_errors.append(parsed_loan.validate())
+        validated_issues.append(parsed_loan.validate())
+
+    anomaly_reporter(validated_issues, Path(output_path))
 
     x = 10
 

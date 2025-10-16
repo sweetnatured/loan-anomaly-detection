@@ -5,3 +5,4 @@ __pycache__/
 index_exporter/__pycache__/
 .pytest_cache/
 /anomaly_detector/loans.xlsx
+/anomaly_detector/loan_anomalies.csv

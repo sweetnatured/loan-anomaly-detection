@@ -40,7 +40,6 @@ LOAN_MAP = {
     "loan term": "loan_term",
     "borrower type": "borrower_type",
     "loan type": "loan_type",
-    "expected repayment date": "expected_repayment_date",
     "loan status": "loan_status",
     "purpose": "purpose",
 }
@@ -52,6 +51,7 @@ REPAYMENT_MAP = {
     "outstanding interest": "outstanding_interest",
     "repaid interest": "repaid_interest",
     "repayment date": "repayment_date",
+    "expected repayment date": "expected_repayment_date",
     "last debt payment date": "last_debt_payment_date",
     "arrears": "arrears",
     "delay interest": "delay_interest",
@@ -105,7 +105,7 @@ class LoanRecord:
     collateral: Optional[CollateralInfo] = None
     issues: List[Issue] = field(default_factory=list, init=False)
 
-    def validate(self) -> List[Issue]:
+    def validate(self) -> List[Dict[int, Issue]]:
         issues: List[Issue] = []
         issues += self.borrower.validate()
         issues += self.loan.validate()
@@ -113,7 +113,8 @@ class LoanRecord:
         issues += self.company.validate()
         issues += self.collateral.validate()
 
-        return issues
+        mapped_issues = {self.loan.loan_id: issues}
+        return mapped_issues
 
 
 @dataclass
@@ -141,8 +142,8 @@ class BorrowerInfo:
         issues: List[Issue] = []
 
         for field in ["borrower_income", "spouse_income", "family_income",
-                    "borrower_liabilities", "spouse_liabilities", "family_liabilities",
-                    "children", "months_at_current_employer", "years_working_total"]:
+                      "borrower_liabilities", "spouse_liabilities", "family_liabilities",
+                      "children", "months_at_current_employer", "years_working_total"]:
             val = getattr(self, field)
             if val is not None and val < 0:
                 issues.append(Issue("NEGATIVE_VALUE", "ERROR", field,
@@ -150,6 +151,8 @@ class BorrowerInfo:
         if self.dti is not None:
             if self.dti < 0:
                 issues.append(Issue("DTI_NEGATIVE", "ERROR", "dti", "DTI cannot be negative.", self.dti))
+
+
         return issues
 
 
@@ -163,7 +166,6 @@ class LoanInfo:
     loan_term: Optional[int] = None
     borrower_type: Optional[str] = None
     loan_type: Optional[str] = None
-    expected_repayment_date: Optional[date] = None
     loan_status: Optional[str] = None
     purpose: Optional[str] = None
 
@@ -172,6 +174,13 @@ class LoanInfo:
         if self.loan_amount is not None and self.loan_amount <= 0:
             issues.append(Issue("AMOUNT_NONPOSITIVE", "ERROR", "loan_amount",
                                 "Loan amount must be > 0.", self.loan_amount))
+
+        date_fields = [f for f in self.__annotations__ if f.endswith("date")]
+        for field in date_fields:
+            val = getattr(self, field)
+            if val == 'Not Valid date':
+                issues.append(Issue("INVALID_DATE", "ERROR", "date issue", "Date is not valid formatted", val))
+
         return issues
 
 
@@ -183,6 +192,7 @@ class RepaymentInfo:
     outstanding_interest: Optional[float] = None
     repaid_interest: Optional[float] = None
     repayment_date: Optional[date] = None
+    expected_repayment_date: Optional[date] = None
     last_debt_payment_date: Optional[date] = None
     arrears: Optional[float] = None
     delay_interest: Optional[float] = None
@@ -192,18 +202,41 @@ class RepaymentInfo:
     def validate(self) -> List[Issue]:
         issues: List[Issue] = []
         for field in ["monthly_payment", "outstanding_principal", "repaid_principal",
-                    "outstanding_interest", "repaid_interest", "arrears", "delay_interest"]:
+                      "outstanding_interest", "repaid_interest", "arrears", "delay_interest"]:
             val = getattr(self, field)
             if val is not None and val < 0:
                 issues.append(Issue("NEGATIVE_VALUE", "ERROR", field,
                                     "Field should not be negative.", val))
+
         if self.days_late is not None and self.days_late < 0:
             issues.append(Issue("NEGATIVE_DAYS_LATE", "ERROR", "days_late",
                                 "Days late cannot be negative.", self.days_late))
 
         if self.payments == "Not valid list of dicts":
-            issues.append(Issue("NON_COMPLETE_PAYMENTS", "ERROR", "payments",
-                                "Payments column is not consistent", self.payments))
+            issues.append(Issue("NON_COMPLETE_PAYMENTS", "ERROR", "payments", "Payments column is not consistent"))
+
+        if self.payments != 'Not valid list of dicts':
+            for payment in self.payments:
+                payment_date = payment.get('Payment date')
+                repayment_date = payment.get('Repayment date')
+
+                if not payment_date or not repayment_date:
+                    continue
+
+                try:
+                    date_payment = datetime.strptime(payment_date, "%d/%m/%Y")
+                    date_repayment = datetime.strptime(repayment_date, "%d/%m/%Y")
+                    payment_diff = (date_payment - date_repayment).days
+                    if payment_diff > 90:
+                        issues.append(Issue("DEFAULT", "ERROR", "payments", f"Payment expired {payment_diff} days", f"payment date: {date_payment} -- repayment date:{date_repayment}"))
+                except Exception as e:
+                    issues.append(Issue("ParseError", "WARN", "Payment date", str(e), payment))
+
+        date_fields = [f for f in self.__annotations__ if f.endswith("date")]
+        for field in date_fields:
+            val = getattr(self, field)
+            if val == 'Not Valid date':
+                issues.append(Issue("INVALID_DATE", "ERROR", field, "Date is not valid formatted"))
 
         return issues
 
@@ -248,6 +281,13 @@ class CollateralInfo:
         if self.collateral_market_value is not None and self.collateral_market_value <= 0:
             issues.append(Issue("COLLATERAL_NONPOSITIVE", "ERROR", "collateral_market_value",
                                 "Collateral market value must be > 0.", self.collateral_market_value))
+
+        date_fields = [f for f in self.__annotations__ if f.endswith("date")]
+        for field in date_fields:
+            val = getattr(self, field)
+            if val == 'Not Valid date':
+                issues.append(Issue("INVALID_DATE", "ERROR", field, "Date is not valid formatted"))
+
         return issues
 
 
