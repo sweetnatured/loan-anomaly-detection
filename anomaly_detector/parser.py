@@ -350,7 +350,7 @@ class XLSXLoanParser(LoanParser):
                            "spouse_liabilities", "family_income", "family_liabilities",
                            "collateral_market_value", "dti"}:
                 out[field] = self.__to_float(val)
-            elif field in {"credit_score", "loan_term", "days_late",
+            elif field in {"borrower_id", "loan_id", "loan_amount", "loan_term", "days_late",
                            "children", "months_at_current_employer",
                            "years_working_total", "number_of_employees",
                            "company_age_years", "birth_year"}:
