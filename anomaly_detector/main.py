@@ -28,6 +28,7 @@ def configure_logging(fmt: str, level: str) -> None:
 def main(
         file_path: str = typer.Option(default=False, envvar="FILE_PATH"),
         output_path: str = typer.Option(default=False, envvar="OUTPUT_PATH"),
+        xirr_sensitivity: float = typer.Option(default=0.1, envvar="XIRR_SENSITIVITY"),
         dry_run: bool = typer.Option(default=False, envvar="DRY_RUN"),
         logging_format: str = typer.Option(
             default='[%(asctime)s] [%(threadName)s] %(levelname)s %(name)s - %(message)s',
@@ -41,7 +42,7 @@ def main(
     parsed_loans = loan_parser.parse_for(Path(file_path))
     validated_issues = []
     for parsed_loan in parsed_loans:
-        validated_issues.append(parsed_loan.validate())
+        validated_issues.append(parsed_loan.validate(xirr_sensitivity))
 
     anomaly_reporter(validated_issues, Path(output_path), dry_run)
 

@@ -318,6 +318,28 @@ pygments = ">=2.7.2"
 dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "requests", "setuptools", "xmlschema"]
 
 [[package]]
+name = "pyxirr"
+version = "0.4.0"
+description = "Rust-powered collection of financial functions."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyxirr-0.4.0-cp36-cp36m-macosx_10_9_universal2.whl", hash = "sha256:9f5a7da27b2c30abbc9f1d3868930a023722b28675fc6b921a4e68ad608148a7"},
+    {file = "pyxirr-0.4.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:2940b9590081e0fd58bc8cf331c0c6cf2215e7faeb0cf9df2017b20564e51a15"},
+    {file = "pyxirr-0.4.0-cp36-none-win_amd64.whl", hash = "sha256:794323d1f6bd9b795bd0b192e6d839913f82e4da0a5b7de557db01d5c1d94745"},
+    {file = "pyxirr-0.4.0-cp37-cp37m-macosx_10_9_universal2.whl", hash = "sha256:fba7ba7bd2ff6d48efe71c3be33e2b0005f339b7673daddbbe611658e9b929b4"},
+    {file = "pyxirr-0.4.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:9b1d50eeded6d362c224298f3983d737cb0e92bb2cad62de4f265f18480dc6a2"},
+    {file = "pyxirr-0.4.0-cp37-none-win_amd64.whl", hash = "sha256:85bccdbf5a8eb7d305cc6cb54d6be39c64450e93bb2bb4ebdf3f4994fafcce34"},
+    {file = "pyxirr-0.4.0-cp38-cp38-macosx_10_9_universal2.whl", hash = "sha256:18580f3c1c8bebca24dbbe368889626750c0dafc2c3cd74c9f19fb1ff66f2424"},
+    {file = "pyxirr-0.4.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:a6007d00f3f0b580c2a418e8729a59b0d630154fcb46e3e9469f1f5e979f2045"},
+    {file = "pyxirr-0.4.0-cp38-none-win_amd64.whl", hash = "sha256:27c52f2df10495c4075bab150190b426f54b5fc642a6a5ee0a560f97fb4cd13e"},
+    {file = "pyxirr-0.4.0-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:b2779f76f4b3705c3b4c3454c9ab4fa870236bd8896d8482e3e25ff21bdfaae0"},
+    {file = "pyxirr-0.4.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:a724b433b9371740e7bee8fde065d7931a7b5d7efe703f8bdcd2517bf7d56506"},
+    {file = "pyxirr-0.4.0-cp39-none-win_amd64.whl", hash = "sha256:736d256e7a329524f71e075cdbbda47c4f5d0413673fc12292c198f02f80c211"},
+    {file = "pyxirr-0.4.0.tar.gz", hash = "sha256:9d9aec63b9137d8c11e3dd20f76075f47dcb0afb39d641b7621b65a89a4b6452"},
+]
+
+[[package]]
 name = "requirements-parser"
 version = "0.13.0"
 description = "This is a small Python module for parsing Pip requirement files."
@@ -391,4 +413,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "eadca79581aad59f52ac657d1fa9298279e40b29e4740e373f86c5f6cabd64d3"
+content-hash = "cb69d0adfcfea516519c1158a473a705112beb34c1262ad934e8c2f5a5d672c7"

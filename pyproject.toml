@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.12"
 openpyxl = "~3"
 typer = "~0"
+pyxirr = "~0"
 
 [tool.poetry.group.dev.dependencies]
 deptry = "~0"

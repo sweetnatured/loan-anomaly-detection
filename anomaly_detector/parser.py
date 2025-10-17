@@ -8,6 +8,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional, List, Literal, Dict, Any
 
+from pyxirr import xirr
+
+
 from openpyxl import load_workbook
 
 BORROWER_MAP = {
@@ -105,11 +108,11 @@ class LoanRecord:
     collateral: Optional[CollateralInfo] = None
     issues: List[Issue] = field(default_factory=list, init=False)
 
-    def validate(self) -> List[Dict[int, Issue]]:
+    def validate(self, xirr_sensitivity:float) -> List[Dict[int, Issue]]:
         issues: List[Issue] = []
         issues += self.borrower.validate()
         issues += self.loan.validate()
-        issues += self.repayment.validate()
+        issues += self.repayment.validate(self.loan.loan_amount, self.loan.disbursal_date, self.loan.interest_rate, xirr_sensitivity)
         issues += self.company.validate()
         issues += self.collateral.validate()
 
@@ -198,7 +201,7 @@ class RepaymentInfo:
     days_late: Optional[int] = None
     payments: Optional[Dict[str, Any]] = None
 
-    def validate(self) -> List[Issue]:
+    def validate(self, loan_amount, disbursal_date, interest_rate, xirr_sensitivity ) -> List[Issue]:
         issues: List[Issue] = []
         for field in ["monthly_payment", "outstanding_principal", "repaid_principal",
                       "outstanding_interest", "repaid_interest", "arrears", "delay_interest"]:
@@ -215,6 +218,7 @@ class RepaymentInfo:
             issues.append(Issue("NON_COMPLETE_PAYMENTS", "ERROR", "payments", "Payments column is not consistent"))
 
         if self.payments != 'Not valid list of dicts':
+
             for payment in self.payments:
                 payment_date = payment.get('Payment date')
                 repayment_date = payment.get('Repayment date')
@@ -230,6 +234,30 @@ class RepaymentInfo:
                         issues.append(Issue("DEFAULT", "ERROR", "payments", f"Payment expired {payment_diff} days", f"payment date: {date_payment} -- repayment date:{date_repayment}"))
                 except Exception as e:
                     issues.append(Issue("ParseError", "WARN", "Payment date", str(e), payment))
+
+            payment_dates = [disbursal_date]
+            payment_amounts = [-loan_amount]
+
+            for payment in self.payments:
+                payment_date = payment.get('Payment date')
+                amount = payment.get('Amount')
+                try:
+                    date_payment = datetime.strptime(payment_date, "%d/%m/%Y")
+                    payment_dates.append(date_payment)
+                    payment_amounts.append(amount)
+                except Exception as e:
+                    issues.append(Issue("ParseError", "WARN", "Payment date", str(e), payment))
+
+            xirr_value = xirr(payment_dates,payment_amounts)
+            interest_ratio = interest_rate/100
+            if abs(interest_ratio-xirr_value) > xirr_sensitivity:
+                issues.append(Issue("XIRRDeviation", "ERROR", "payments", f"Interest rate: {interest_ratio} , XIRR: {xirr_value}, difference: {abs(interest_ratio-xirr_value)} "))
+
+
+
+
+
+
 
         date_fields = [f for f in self.__annotations__ if f.endswith("date")]
         for field in date_fields:
@@ -263,6 +291,7 @@ class CompanyInfo:
             issues.append(Issue("NEGATIVE_REVENUE", "ERROR", "annual_revenue",
                                 "Revenue cannot be negative.", self.annual_revenue))
         return issues
+
 
 
 @dataclass
