@@ -6,7 +6,7 @@ from typing import List, Dict
 from anomaly_detector.parser import Issue
 
 
-def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path, dry_run: bool = False):
+def anomaly_reporter(validated_issues: List[Dict[int, List[Issue]]], output_path: Path, dry_run: bool = False):
 
     if dry_run:
         for issues_per_loan in validated_issues:
@@ -23,17 +23,6 @@ def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path
 
                         }
                         logging.info(f"[DRY-RUN] Would write row: {row}")
-
-                else:
-                    row = {
-                        "loan_id": loan_id,
-                        "severity": 'CLEAN',
-                        "code": '',
-                        "field": '',
-                        "message": '',
-                        "value": '',
-                    }
-                    logging.info(f"[DRY-RUN] Would write row: {row}")
 
         return
 
@@ -54,13 +43,3 @@ def anomaly_reporter(validated_issues: List[Dict[int, Issue]], output_path: Path
 
                         }
                         writer.writerow(row)
-                else:
-                    row = {
-                        "loan_id": loan_id,
-                        "severity": 'CLEAN',
-                        "code": '',
-                        "field": '',
-                        "message": '',
-                        "value": '',
-                    }
-                    writer.writerow(row)

@@ -81,6 +81,7 @@ loan_id,severity,code,field,message,value
 37216892,ERROR,DEFAULT,payments,Payment expired 1299 days,payment date: 2026-12-20 00:00:00 -- repayment date:2023-05-31 00:00:00
 37216892,ERROR,DEFAULT,payments,Payment expired 1330 days,payment date: 2027-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
 37216892,ERROR,DEFAULT,payments,Payment expired 1330 days,payment date: 2027-01-20 00:00:00 -- repayment date:2023-05-31 00:00:00
+37216892,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.47830366307952277, difference: 0.2583036630795228 ",
 99981632,ERROR,DEFAULT,payments,Payment expired 119 days,payment date: 2024-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
 99981632,ERROR,DEFAULT,payments,Payment expired 119 days,payment date: 2024-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
 99981632,ERROR,DEFAULT,payments,Payment expired 149 days,payment date: 2024-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
@@ -229,7 +230,8 @@ loan_id,severity,code,field,message,value
 99981632,ERROR,DEFAULT,payments,Payment expired 2310 days,payment date: 2030-06-25 00:00:00 -- repayment date:2024-02-27 00:00:00
 99981632,ERROR,DEFAULT,payments,Payment expired 2340 days,payment date: 2030-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
 99981632,ERROR,DEFAULT,payments,Payment expired 2340 days,payment date: 2030-07-25 00:00:00 -- repayment date:2024-02-27 00:00:00
-13752758,CLEAN,,,,
+99981632,ERROR,XIRRDeviation,payments,"Interest rate: 0.17 , XIRR: 5.389378101944186, difference: 5.219378101944186 ",
+13752758,ERROR,XIRRDeviation,payments,"Interest rate: 0.24 , XIRR: 0.2765178250203751, difference: 0.036517825020375094 ",
 19972183,CLEAN,,,,
 94863476,CLEAN,,,,
 17611322,ERROR,DEFAULT,payments,Payment expired 102 days,payment date: 2024-12-01 00:00:00 -- repayment date:2024-08-21 00:00:00
@@ -254,6 +256,7 @@ loan_id,severity,code,field,message,value
 17611322,ERROR,DEFAULT,payments,Payment expired 679 days,payment date: 2026-07-01 00:00:00 -- repayment date:2024-08-21 00:00:00
 17611322,ERROR,DEFAULT,payments,Payment expired 710 days,payment date: 2026-08-01 00:00:00 -- repayment date:2024-08-21 00:00:00
 17611322,ERROR,DEFAULT,payments,Payment expired 741 days,payment date: 2026-09-01 00:00:00 -- repayment date:2024-08-21 00:00:00
+17611322,ERROR,XIRRDeviation,payments,"Interest rate: 0.33 , XIRR: 0.5308189412241683, difference: 0.20081894122416827 ",
 31397492,ERROR,DEFAULT,payments,Payment expired 107 days,payment date: 2023-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
 31397492,ERROR,DEFAULT,payments,Payment expired 107 days,payment date: 2023-06-28 00:00:00 -- repayment date:2023-03-13 00:00:00
 31397492,ERROR,DEFAULT,payments,Payment expired 137 days,payment date: 2023-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
@@ -356,6 +359,7 @@ loan_id,severity,code,field,message,value
 31397492,ERROR,DEFAULT,payments,Payment expired 1598 days,payment date: 2027-07-28 00:00:00 -- repayment date:2023-03-13 00:00:00
 31397492,ERROR,DEFAULT,payments,Payment expired 1629 days,payment date: 2027-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
 31397492,ERROR,DEFAULT,payments,Payment expired 1629 days,payment date: 2027-08-28 00:00:00 -- repayment date:2023-03-13 00:00:00
+31397492,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 1.491322485507815, difference: 1.2713224855078151 ",
 35294697,ERROR,DEFAULT,payments,Payment expired 99 days,payment date: 2024-12-06 00:00:00 -- repayment date:2024-08-29 00:00:00
 35294697,ERROR,DEFAULT,payments,Payment expired 130 days,payment date: 2025-01-06 00:00:00 -- repayment date:2024-08-29 00:00:00
 35294697,ERROR,DEFAULT,payments,Payment expired 161 days,payment date: 2025-02-06 00:00:00 -- repayment date:2024-08-29 00:00:00
@@ -378,7 +382,8 @@ loan_id,severity,code,field,message,value
 35294697,ERROR,DEFAULT,payments,Payment expired 676 days,payment date: 2026-07-06 00:00:00 -- repayment date:2024-08-29 00:00:00
 35294697,ERROR,DEFAULT,payments,Payment expired 707 days,payment date: 2026-08-06 00:00:00 -- repayment date:2024-08-29 00:00:00
 35294697,ERROR,DEFAULT,payments,Payment expired 738 days,payment date: 2026-09-06 00:00:00 -- repayment date:2024-08-29 00:00:00
-36885572,CLEAN,,,,
+35294697,ERROR,XIRRDeviation,payments,"Interest rate: 0.25 , XIRR: 0.5507629231812291, difference: 0.3007629231812291 ",
+36885572,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.286128634157854, difference: 0.066128634157854 ",
 46313736,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-07-14 00:00:00 -- repayment date:2024-04-11 00:00:00
 46313736,ERROR,DEFAULT,payments,Payment expired 125 days,payment date: 2024-08-14 00:00:00 -- repayment date:2024-04-11 00:00:00
 46313736,ERROR,DEFAULT,payments,Payment expired 156 days,payment date: 2024-09-14 00:00:00 -- repayment date:2024-04-11 00:00:00
@@ -404,9 +409,10 @@ loan_id,severity,code,field,message,value
 46313736,ERROR,DEFAULT,payments,Payment expired 763 days,payment date: 2026-05-14 00:00:00 -- repayment date:2024-04-11 00:00:00
 46313736,ERROR,DEFAULT,payments,Payment expired 794 days,payment date: 2026-06-14 00:00:00 -- repayment date:2024-04-11 00:00:00
 46313736,ERROR,DEFAULT,payments,Payment expired 824 days,payment date: 2026-07-14 00:00:00 -- repayment date:2024-04-11 00:00:00
-53926762,CLEAN,,,,
-56689556,CLEAN,,,,
-57949284,CLEAN,,,,
+46313736,ERROR,XIRRDeviation,payments,"Interest rate: 0.19 , XIRR: 0.6031573586426286, difference: 0.41315735864262865 ",
+53926762,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.37284860596568314, difference: 0.15284860596568314 ",
+56689556,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.2992526497136496, difference: 0.07925264971364962 ",
+57949284,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.38827350571809494, difference: 0.16827350571809493 ",
 58271697,ERROR,DEFAULT,payments,Payment expired 103 days,payment date: 2024-08-19 00:00:00 -- repayment date:2024-05-08 00:00:00
 58271697,ERROR,DEFAULT,payments,Payment expired 134 days,payment date: 2024-09-19 00:00:00 -- repayment date:2024-05-08 00:00:00
 58271697,ERROR,DEFAULT,payments,Payment expired 164 days,payment date: 2024-10-19 00:00:00 -- repayment date:2024-05-08 00:00:00
@@ -422,35 +428,37 @@ loan_id,severity,code,field,message,value
 58271697,ERROR,DEFAULT,payments,Payment expired 468 days,payment date: 2025-08-19 00:00:00 -- repayment date:2024-05-08 00:00:00
 58271697,ERROR,DEFAULT,payments,Payment expired 499 days,payment date: 2025-09-19 00:00:00 -- repayment date:2024-05-08 00:00:00
 58271697,ERROR,DEFAULT,payments,Payment expired 529 days,payment date: 2025-10-19 00:00:00 -- repayment date:2024-05-08 00:00:00
-61752881,CLEAN,,,,
-65318525,CLEAN,,,,
-73224837,CLEAN,,,,
+58271697,ERROR,XIRRDeviation,payments,"Interest rate: 0.21 , XIRR: 0.4091742398151933, difference: 0.1991742398151933 ",
+61752881,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.46778784211292973, difference: 0.24778784211292973 ",
+65318525,ERROR,XIRRDeviation,payments,"Interest rate: 0.21 , XIRR: -0.3369797032643488, difference: 0.5469797032643487 ",
+73224837,ERROR,XIRRDeviation,payments,"Interest rate: 0.15 , XIRR: 0.24876175744828943, difference: 0.09876175744828944 ",
 73371141,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-03-16 00:00:00 -- repayment date:2023-12-13 00:00:00
 73371141,ERROR,DEFAULT,payments,Payment expired 94 days,payment date: 2024-03-16 00:00:00 -- repayment date:2023-12-13 00:00:00
-76669736,CLEAN,,,,
-78579969,CLEAN,,,,
-79811839,CLEAN,,,,
-96579687,CLEAN,,,,
+73371141,ERROR,XIRRDeviation,payments,"Interest rate: 0.15 , XIRR: 1.2794097621816827, difference: 1.1294097621816828 ",
+76669736,ERROR,XIRRDeviation,payments,"Interest rate: 0.18 , XIRR: -0.12794765246365675, difference: 0.30794765246365674 ",
+78579969,ERROR,XIRRDeviation,payments,"Interest rate: 0.19 , XIRR: 0.2784645919240539, difference: 0.08846459192405387 ",
+79811839,ERROR,XIRRDeviation,payments,"Interest rate: 0.21 , XIRR: 0.41765101562010576, difference: 0.20765101562010577 ",
+96579687,ERROR,XIRRDeviation,payments,"Interest rate: 0.22 , XIRR: 0.4506988240665837, difference: 0.23069882406658368 ",
 58153155,CLEAN,,,,
 32271989,CLEAN,,,,
 13891862,CLEAN,,,,
 41531189,CLEAN,,,,
 35449965,CLEAN,,,,
 97751227,CLEAN,,,,
-62778129,CLEAN,,,,
-14146974,CLEAN,,,,
-74364775,CLEAN,,,,
+62778129,ERROR,XIRRDeviation,payments,"Interest rate: 0.16 , XIRR: 0.17224504757003942, difference: 0.012245047570039413 ",
+14146974,ERROR,XIRRDeviation,payments,"Interest rate: 0.25 , XIRR: 3.999179878517634e-16, difference: 0.2499999999999996 ",
+74364775,ERROR,XIRRDeviation,payments,"Interest rate: 0.39 , XIRR: 0.22219603117540837, difference: 0.16780396882459164 ",
 94976997,CLEAN,,,,
-26961823,CLEAN,,,,
+26961823,ERROR,XIRRDeviation,payments,"Interest rate: 0.43 , XIRR: 0.24215654513006668, difference: 0.1878434548699333 ",
 94273288,CLEAN,,,,
 57496522,CLEAN,,,,
 79362712,CLEAN,,,,
-82251944,CLEAN,,,,
+82251944,ERROR,XIRRDeviation,payments,"Interest rate: 0.5 , XIRR: 0.28890368607959527, difference: 0.21109631392040473 ",
 56721442,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
-57248583,CLEAN,,,,
+57248583,ERROR,XIRRDeviation,payments,"Interest rate: 0.19 , XIRR: 0.10325105688515014, difference: 0.08674894311484986 ",
 97987259,ERROR,INVALID_DATE,appraisal_date,Date is not valid formatted,
 68531246,CLEAN,,,,
-96227257,CLEAN,,,,
+96227257,ERROR,XIRRDeviation,payments,"Interest rate: 0.16 , XIRR: 0.17238270361134442, difference: 0.012382703611344414 ",
 56595445,CLEAN,,,,
 51117775,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 86642894,CLEAN,,,,
@@ -458,19 +466,19 @@ loan_id,severity,code,field,message,value
 87152791,CLEAN,,,,
 35612451,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 35666371,CLEAN,,,,
-82522951,CLEAN,,,,
-83898441,CLEAN,,,,
+82522951,ERROR,XIRRDeviation,payments,"Interest rate: 0.15 , XIRR: 0.1605141359261574, difference: 0.010514135926157409 ",
+83898441,ERROR,XIRRDeviation,payments,"Interest rate: 0.21 , XIRR: 0.11473792671960771, difference: 0.09526207328039228 ",
 64933882,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 13314659,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 69683127,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 41222884,CLEAN,,,,
-53788773,CLEAN,,,,
+53788773,ERROR,XIRRDeviation,payments,"Interest rate: 0.21 , XIRR: 0.11465899717586912, difference: 0.09534100282413087 ",
 33817222,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 43365273,CLEAN,,,,
 28133318,CLEAN,,,,
 59768427,CLEAN,,,,
 66526158,CLEAN,,,,
-71317797,CLEAN,,,,
+71317797,ERROR,XIRRDeviation,payments,"Interest rate: 0.19 , XIRR: 0.10448576133335025, difference: 0.08551423866664976 ",
 43986823,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 25372336,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 34699374,CLEAN,,,,
@@ -478,6 +486,6 @@ loan_id,severity,code,field,message,value
 32742879,CLEAN,,,,
 26165342,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
 95814762,ERROR,NON_COMPLETE_PAYMENTS,payments,Payments column is not consistent,
-51247328,CLEAN,,,,
-13616691,CLEAN,,,,
+51247328,ERROR,XIRRDeviation,payments,"Interest rate: 0.25 , XIRR: 0.13795246082282797, difference: 0.11204753917717203 ",
+13616691,ERROR,XIRRDeviation,payments,"Interest rate: 0.19 , XIRR: 0.20627123846871273, difference: 0.01627123846871273 ",
 29492418,CLEAN,,,,

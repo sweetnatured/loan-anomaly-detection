@@ -26,6 +26,7 @@ This project provides a CLI app, you can run it directly via Poetry:
 poetry run python anomaly_detector/main.py \
 --file-path ~/home/user/path/to/loans.xlsx \
 --output-path ~/home/user/path/to/anomaly_report.csv
+--xirr-sensitivity 0.05
 ```
 #### Running the tests
 ```sh 
@@ -43,6 +44,7 @@ docker run --rm \
 loan_anomaly_detector \
 --file-path /data/loans.xlsx \
 --output-path /data/anomaly_report.csv
+--xirr-sensitivity 0.05
 ```
 
 Usage: main.py [**OPTIONS**]
@@ -50,6 +52,7 @@ Usage: main.py [**OPTIONS**]
 Options:
   --file-path TEXT                    [env var: FILE_PATH; required]
   --output-path TEXT                  [env var: OUTPUT_PATH; required]
+  --xirr-sensitivity FLOAT            [env var: XIRR_SENSITIVITY; default: 0.07]
   
   --dry-run / --no-dry-run            [env var: DRY_RUN; default: no-dry-run]
   --logging-format TEXT               [env var: LOGGING_FORMAT; default: 

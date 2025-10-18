@@ -108,13 +108,16 @@ class LoanRecord:
     collateral: Optional[CollateralInfo] = None
     issues: List[Issue] = field(default_factory=list, init=False)
 
-    def validate(self, xirr_sensitivity:float) -> List[Dict[int, Issue]]:
+    def validate(self, xirr_sensitivity:float) -> Dict[int, List[Issue]]:
         issues: List[Issue] = []
         issues += self.borrower.validate()
         issues += self.loan.validate()
         issues += self.repayment.validate(self.loan.loan_amount, self.loan.disbursal_date, self.loan.interest_rate, xirr_sensitivity)
         issues += self.company.validate()
         issues += self.collateral.validate()
+
+        if not issues:
+            issues.append(Issue(severity='CLEAN', code='', field='', message=''))
 
         mapped_issues = {self.loan.loan_id: issues}
         return mapped_issues
