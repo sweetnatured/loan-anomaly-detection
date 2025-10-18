@@ -8,3 +8,4 @@ index_exporter/__pycache__/
 /anomaly_detector/loan_anomalies.csv
 /dummy_volume/
 /anomaly_detector/anomlies.csv
+/file_augmenter/

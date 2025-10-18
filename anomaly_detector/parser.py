@@ -99,7 +99,7 @@ class Issue:
     suggestion: Optional[str] = None
 
 
-@dataclass
+@dataclass(frozen=True)
 class LoanRecord:
     borrower: BorrowerInfo
     loan: LoanInfo
@@ -123,7 +123,7 @@ class LoanRecord:
         return mapped_issues
 
 
-@dataclass
+@dataclass(frozen=True)
 class BorrowerInfo:
     borrower_id: int
     birth_year: Optional[int] = None
@@ -161,7 +161,7 @@ class BorrowerInfo:
         return issues
 
 
-@dataclass
+@dataclass(frozen=True)
 class LoanInfo:
     loan_id: int
     credit_score: Optional[str] = None
@@ -189,7 +189,7 @@ class LoanInfo:
         return issues
 
 
-@dataclass
+@dataclass(frozen=True)
 class RepaymentInfo:
     monthly_payment: Optional[float] = None
     outstanding_principal: Optional[float] = None
@@ -271,7 +271,7 @@ class RepaymentInfo:
         return issues
 
 
-@dataclass
+@dataclass(frozen=True)
 class CompanyInfo:
     city: Optional[str] = None
     activity: Optional[str] = None
@@ -296,8 +296,7 @@ class CompanyInfo:
         return issues
 
 
-
-@dataclass
+@dataclass(frozen=True)
 class CollateralInfo:
     appraisal_date: Optional[date] = None
     appraisal_provider: Optional[str] = None
