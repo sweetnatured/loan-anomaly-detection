@@ -11,3 +11,4 @@ index_exporter/__pycache__/
 /example_output_extended.csv
 /file_augmenter/loans.xlsx
 /file_augmenter/expanded_loans.xlsx
+/file_augmenter/

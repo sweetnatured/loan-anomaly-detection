@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from datetime import datetime
 from pathlib import Path
-from typing import Optional, List, Literal, Dict, Any
+from typing import Optional, List, Literal, Dict, Any, Iterator
 
 from pyxirr import xirr
 
@@ -319,7 +319,7 @@ class CollateralInfo:
 
 class LoanParser(abc.ABC):
     @abc.abstractmethod
-    def parse_for(self, file_names: Path) -> List[LoanRecord]:
+    def parse_for(self, file_names: Path) -> Iterator[LoanRecord]:
         ...
 
 
@@ -328,13 +328,11 @@ class XLSXLoanParser(LoanParser):
     def __init__(self) -> None:
         ...
 
-    def parse_for(self, file_path: Path) -> List[LoanRecord]:
+    def parse_for(self, file_path: Path) -> Iterator[LoanRecord]:
         loan_file = load_workbook(file_path, data_only=True, read_only=True).active
         header_cells = next(loan_file.iter_rows(min_row=1, max_row=1))
         headers = [self.__norm(str(c.value)) if c.value is not None else "" for c in header_cells]
         enumerated_headers = {i: h for i, h in enumerate(headers) if h}
-
-        records: list[LoanRecord] = []
 
         for row in loan_file.iter_rows(min_row=2, values_only=True):
             row_dict = {enumerated_headers[i]: row[i] for i in enumerated_headers.keys()}
@@ -350,16 +348,13 @@ class XLSXLoanParser(LoanParser):
             if not borrower_id or not loan_id:
                 continue
 
-            record = LoanRecord(
+            yield LoanRecord(
                 borrower=BorrowerInfo(**borrower_kwargs),
                 loan=LoanInfo(**loan_kwargs),
                 repayment=RepaymentInfo(**repay_kwargs),
                 company=CompanyInfo(**company_kwargs),
                 collateral=CollateralInfo(**coll_kwargs),
             )
-            records.append(record)
-
-        return records
 
     def __extract(self, fields_map: Dict[str, str], row: Dict[str, Any]) -> Dict[str, Any]:
         out: Dict[str, Any] = {}

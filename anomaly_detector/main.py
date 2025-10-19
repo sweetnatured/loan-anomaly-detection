@@ -1,5 +1,6 @@
 import logging
 import sys
+import time
 from types import TracebackType
 from typing import Type, Optional, Any
 from pathlib import Path
@@ -38,14 +39,15 @@ def main(
 ) -> None:
     configure_logging(logging_format, logging_level)
 
+    start_time = time.perf_counter()
     loan_parser = XLSXLoanParser()
     parsed_loans = loan_parser.parse_for(Path(file_path))
-    validated_issues = []
-    for parsed_loan in parsed_loans:
-        validated_issues.append(parsed_loan.validate(xirr_sensitivity))
 
+    validated_issues = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
     anomaly_reporter(validated_issues, Path(output_path), dry_run)
 
+    elapsed = time.perf_counter() - start_time
+    typer.echo(f"✅ Process finished in {elapsed:.2f} seconds.")
     typer.echo("Process finished.")
 
 
