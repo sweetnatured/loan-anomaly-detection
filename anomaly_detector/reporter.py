@@ -22,11 +22,14 @@ def anomaly_reporter(validated_issues: Generator[Any, Any, None], output_path: P
                         }
                         logging.info(f"[DRY-RUN] Would write row: {row}")
 
+        logging.info(f"[DRY-RUN] Issues would be written to the file: {output_path}")
+
         return
 
     with open(output_path, "w", newline="", encoding="utf-8") as file_io:
         writer = csv.DictWriter(file_io, fieldnames=["loan_id", "severity", "code", "field", "message", "value"])
         writer.writeheader()
+        logging.info(f"Issues are being written to the file: {output_path}")
         for issues_per_loan in validated_issues:
             for loan_id, issues in issues_per_loan.items():
                 if issues:

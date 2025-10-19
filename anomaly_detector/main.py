@@ -39,10 +39,12 @@ def main(
 ) -> None:
     configure_logging(logging_format, logging_level)
 
+    logging.info(f"Anomaly detection has been started for the file: {file_path}")
+
     start_time = time.perf_counter()
     loan_parser = XLSXLoanParser()
-    parsed_loans = loan_parser.parse_for(Path(file_path))
 
+    parsed_loans = loan_parser.parse_for(Path(file_path))
     validated_issues = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
     anomaly_reporter(validated_issues, Path(output_path), dry_run)
 
