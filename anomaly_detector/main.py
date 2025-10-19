@@ -47,8 +47,7 @@ def main(
     anomaly_reporter(validated_issues, Path(output_path), dry_run)
 
     elapsed = time.perf_counter() - start_time
-    typer.echo(f"✅ Process finished in {elapsed:.2f} seconds.")
-    typer.echo("Process finished.")
+    typer.echo(f"Process finished in {elapsed:.2f} seconds.")
 
 
 if __name__ == "__main__":

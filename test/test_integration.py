@@ -64,4 +64,4 @@ def test_main_cli() -> None:
             assert issues[449]['value'] == ''
 
         assert result.exit_code == 0
-        assert "Process finished." in result.output
+        assert "Process finished " in result.output
