@@ -204,7 +204,7 @@ class RepaymentInfo:
     days_late: Optional[int] = None
     payments: Optional[List[Dict[str, Any]] | str] = None
 
-    def validate(self, loan_amount:  float | None, disbursal_date: date | None, interest_rate:  float | None,
+    def validate(self, loan_amount: float | None, disbursal_date: date | None, interest_rate: float | None,
                  xirr_sensitivity: float) -> List[Issue]:
         issues: List[Issue] = []
         for field_name in ["monthly_payment", "outstanding_principal", "repaid_principal", "outstanding_interest",
