@@ -1,9 +1,9 @@
-from typing import List
+from typing import Iterator
 
 from anomaly_detector.parser import LoanRecord
 
 
-def test_validate(parsed_loans: List[LoanRecord]) -> None:
+def test_validate(parsed_loans: Iterator[LoanRecord]) -> None:
     xirr_sensitivity = 0.07
     validated_issues_generator = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
 

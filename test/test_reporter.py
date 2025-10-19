@@ -1,7 +1,7 @@
 import csv
 import tempfile
 from pathlib import Path
-from typing import List
+from typing import Iterator
 
 from anomaly_detector.parser import LoanRecord
 from anomaly_detector.reporter import anomaly_reporter
@@ -9,7 +9,7 @@ from anomaly_detector.reporter import anomaly_reporter
 test_output_anomalities = Path(__file__).absolute().parent / "data" / "test_output_anomalities.csv"
 
 
-def test_reporter(parsed_loans: List[LoanRecord]) -> None:
+def test_reporter(parsed_loans: Iterator[LoanRecord]) -> None:
 
     xirr_sensitivity = 0.07
     validated_issues_generator = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
