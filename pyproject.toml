@@ -21,3 +21,14 @@ pytest = "~8"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+warn_unreachable = true
+
+[tool.deptry]
+extend_exclude = ["test"]
+ignore = ["DEP002", "DEP003"]
+

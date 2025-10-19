@@ -3,12 +3,13 @@ import tempfile
 from pathlib import Path
 from typing import List, Dict
 
-from anomaly_detector.parser import Issue
+from anomaly_detector.parser import Issue, LoanRecord
 from anomaly_detector.reporter import anomaly_reporter
 
 test_output_anomalities = Path(__file__).absolute().parent / "data" / "test_output_anomalities.csv"
 
-def test_reporter(parsed_loans) -> None:
+
+def test_reporter(parsed_loans: List[LoanRecord]) -> None:
 
     validated_issues: List[Dict[int, List[Issue]]] = []
     xirr_sensitivity = 0.07

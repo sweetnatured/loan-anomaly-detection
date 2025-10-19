@@ -10,6 +10,7 @@ runner = CliRunner()
 
 loan_file = Path(__file__).absolute().parent / "data" / "loans.xlsx"
 
+
 def test_main_cli() -> None:
 
     with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", prefix="loan_anomalies_output") as tmp_file_io:
@@ -19,7 +20,7 @@ def test_main_cli() -> None:
             "--output-path", tmp_file_io.name,
         ]
 
-        result = runner.invoke(app, test_options)  # type: ignore
+        result = runner.invoke(app, test_options)
 
         with open(tmp_file_io.name, mode='r') as csv_file:
             csv_reader = csv.DictReader(csv_file)
@@ -44,8 +45,7 @@ def test_main_cli() -> None:
             assert issues[447]['code'] == 'XIRRDeviation'
             assert issues[447]['field'] == 'payments'
             assert issues[447]['loan_id'] == '14146974'
-            assert issues[447][
-                       'message'] == 'Interest rate: 0.25 , XIRR: 3.999179878517634e-16, difference: 0.2499999999999996 '
+            assert issues[447]['message'] == 'Interest rate: 0.25 , XIRR: 3.999179878517634e-16, difference: 0.2499999999999996 '
             assert issues[447]['severity'] == 'ERROR'
             assert issues[447]['value'] == ''
 

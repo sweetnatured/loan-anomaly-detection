@@ -9,7 +9,7 @@ loan_file = Path(__file__).absolute().parent / "data" / "loans.xlsx"
 
 
 @pytest.fixture()
-def parsed_loans()-> List[LoanRecord]:
+def parsed_loans() -> List[LoanRecord]:
     loan_parser = XLSXLoanParser()
     parsed_loans = loan_parser.parse_for(loan_file)
     return parsed_loans

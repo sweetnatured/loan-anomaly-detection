@@ -9,3 +9,4 @@ index_exporter/__pycache__/
 /dummy_volume/
 /anomaly_detector/anomlies.csv
 /file_augmenter/
+/example_output_extended.csv

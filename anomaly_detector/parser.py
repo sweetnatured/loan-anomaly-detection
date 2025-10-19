@@ -104,11 +104,11 @@ class LoanRecord:
     borrower: BorrowerInfo
     loan: LoanInfo
     repayment: RepaymentInfo
-    company: Optional[CompanyInfo] = None
-    collateral: Optional[CollateralInfo] = None
+    company: CompanyInfo
+    collateral: CollateralInfo
     issues: List[Issue] = field(default_factory=list, init=False)
 
-    def validate(self, xirr_sensitivity:float) -> Dict[int, List[Issue]]:
+    def validate(self, xirr_sensitivity: float) -> Dict[int, List[Issue]]:
         issues: List[Issue] = []
         issues += self.borrower.validate()
         issues += self.loan.validate()
@@ -147,12 +147,12 @@ class BorrowerInfo:
     def validate(self) -> List[Issue]:
         issues: List[Issue] = []
 
-        for field in ["borrower_income", "spouse_income", "family_income",
-                      "borrower_liabilities", "spouse_liabilities", "family_liabilities",
-                      "children", "months_at_current_employer", "years_working_total"]:
-            val = getattr(self, field)
+        for field_name in ["borrower_income", "spouse_income", "family_income", "borrower_liabilities",
+                           "spouse_liabilities", "family_liabilities", "children", "months_at_current_employer",
+                           "years_working_total"]:
+            val = getattr(self, field_name)
             if val is not None and val < 0:
-                issues.append(Issue("NEGATIVE_VALUE", "ERROR", field,
+                issues.append(Issue("NEGATIVE_VALUE", "ERROR", field_name,
                                     "Field should not be negative.", val))
         if self.dti is not None:
             if self.dti < 0:
@@ -181,8 +181,8 @@ class LoanInfo:
                                 "Loan amount must be > 0.", self.loan_amount))
 
         date_fields = [f for f in self.__annotations__ if f.endswith("date")]
-        for field in date_fields:
-            val = getattr(self, field)
+        for field_name in date_fields:
+            val = getattr(self, field_name)
             if val == 'Not Valid date':
                 issues.append(Issue("INVALID_DATE", "ERROR", "date issue", "Date is not valid formatted", val))
 
@@ -202,15 +202,16 @@ class RepaymentInfo:
     arrears: Optional[float] = None
     delay_interest: Optional[float] = None
     days_late: Optional[int] = None
-    payments: Optional[Dict[str, Any]] = None
+    payments: Optional[List[Dict[str, Any]] | str] = None
 
-    def validate(self, loan_amount, disbursal_date, interest_rate, xirr_sensitivity ) -> List[Issue]:
+    def validate(self, loan_amount:  float | None, disbursal_date: date | None, interest_rate:  float | None,
+                 xirr_sensitivity: float) -> List[Issue]:
         issues: List[Issue] = []
-        for field in ["monthly_payment", "outstanding_principal", "repaid_principal",
-                      "outstanding_interest", "repaid_interest", "arrears", "delay_interest"]:
-            val = getattr(self, field)
+        for field_name in ["monthly_payment", "outstanding_principal", "repaid_principal", "outstanding_interest",
+                           "repaid_interest", "arrears", "delay_interest"]:
+            val = getattr(self, field_name)
             if val is not None and val < 0:
-                issues.append(Issue("NEGATIVE_VALUE", "ERROR", field,
+                issues.append(Issue("NEGATIVE_VALUE", "ERROR", field_name,
                                     "Field should not be negative.", val))
 
         if self.days_late is not None and self.days_late < 0:
@@ -220,7 +221,7 @@ class RepaymentInfo:
         if self.payments == "Not valid list of dicts":
             issues.append(Issue("NON_COMPLETE_PAYMENTS", "ERROR", "payments", "Payments column is not consistent"))
 
-        if self.payments != 'Not valid list of dicts':
+        if self.payments != 'Not valid list of dicts' and isinstance(self.payments, list):
 
             for payment in self.payments:
                 payment_date = payment.get('Payment date')
@@ -236,37 +237,32 @@ class RepaymentInfo:
                     if payment_diff > 90:
                         issues.append(Issue("DEFAULT", "ERROR", "payments", f"Payment expired {payment_diff} days", f"payment date: {date_payment} -- repayment date:{date_repayment}"))
                 except Exception as e:
-                    issues.append(Issue("ParseError", "WARN", "Payment date", str(e), payment))
+                    issues.append(Issue("ParseError", "ERROR", "Payment date", str(e), payment))
 
-            payment_dates = [disbursal_date]
-            payment_amounts = [-loan_amount]
+            if loan_amount and interest_rate:
+                payment_dates = [disbursal_date]
+                payment_amounts: List[Any] = [-loan_amount]
 
-            for payment in self.payments:
-                payment_date = payment.get('Payment date')
-                amount = payment.get('Amount')
-                try:
-                    date_payment = datetime.strptime(payment_date, "%d/%m/%Y")
-                    payment_dates.append(date_payment)
-                    payment_amounts.append(amount)
-                except Exception as e:
-                    issues.append(Issue("ParseError", "WARN", "Payment date", str(e), payment))
+                for payment in self.payments:
+                    payment_date = payment.get('Payment date')
+                    amount = payment.get('Amount')
+                    try:
+                        date_payment = datetime.strptime(str(payment_date), "%d/%m/%Y")
+                        payment_dates.append(date_payment)
+                        payment_amounts.append(amount)
+                    except Exception as e:
+                        issues.append(Issue("ParseError", "ERROR", "Payment date", str(e), payment))
 
-            xirr_value = xirr(payment_dates,payment_amounts)
-            interest_ratio = interest_rate/100
-            if abs(interest_ratio-xirr_value) > xirr_sensitivity:
-                issues.append(Issue("XIRRDeviation", "ERROR", "payments", f"Interest rate: {interest_ratio} , XIRR: {xirr_value}, difference: {abs(interest_ratio-xirr_value)} "))
-
-
-
-
-
-
+                xirr_value = xirr(payment_dates, payment_amounts)
+                interest_ratio = interest_rate / 100
+                if abs(interest_ratio - xirr_value) > xirr_sensitivity:
+                    issues.append(Issue("XIRRDeviation", "ERROR", "payments", f"Interest rate: {interest_ratio} , XIRR: {xirr_value}, difference: {abs(interest_ratio - xirr_value)} "))
 
         date_fields = [f for f in self.__annotations__ if f.endswith("date")]
-        for field in date_fields:
-            val = getattr(self, field)
+        for field_name in date_fields:
+            val = getattr(self, field_name)
             if val == 'Not Valid date':
-                issues.append(Issue("INVALID_DATE", "ERROR", field, "Date is not valid formatted"))
+                issues.append(Issue("INVALID_DATE", "ERROR", field_name, "Date is not valid formatted"))
 
         return issues
 
@@ -313,10 +309,10 @@ class CollateralInfo:
                                 "Collateral market value must be > 0.", self.collateral_market_value))
 
         date_fields = [f for f in self.__annotations__ if f.endswith("date")]
-        for field in date_fields:
-            val = getattr(self, field)
+        for field_name in date_fields:
+            val = getattr(self, field_name)
             if val == 'Not Valid date':
-                issues.append(Issue("INVALID_DATE", "ERROR", field, "Date is not valid formatted"))
+                issues.append(Issue("INVALID_DATE", "ERROR", field_name, "Date is not valid formatted"))
 
         return issues
 
@@ -329,7 +325,7 @@ class LoanParser(abc.ABC):
 
 class XLSXLoanParser(LoanParser):
 
-    def __init__(self):
+    def __init__(self) -> None:
         ...
 
     def parse_for(self, file_path: Path) -> List[LoanRecord]:
@@ -367,27 +363,27 @@ class XLSXLoanParser(LoanParser):
 
     def __extract(self, fields_map: Dict[str, str], row: Dict[str, Any]) -> Dict[str, Any]:
         out: Dict[str, Any] = {}
-        for col_label, field in fields_map.items():
+        for col_label, field_name in fields_map.items():
             val = row.get(col_label)
-            if field.endswith("_date"):
-                out[field] = self.__to_date(val)
-            elif field == 'payments':
-                out[field] = self.__to_list_of_dict(val)
+            if field_name.endswith("_date"):
+                out[field_name] = self.__to_date(val)
+            elif field_name == 'payments':
+                out[field_name] = self.__to_list_of_dict(val)
 
-            elif field in {"loan_amount", "monthly_payment", "outstanding_principal", "repaid_principal",
-                           "outstanding_interest", "repaid_interest", "arrears", "delay_interest",
-                           "annual_revenue", "annual_profit", "shareholders_equity", "interest_rate",
-                           "borrower_income", "borrower_liabilities", "spouse_income",
-                           "spouse_liabilities", "family_income", "family_liabilities",
-                           "collateral_market_value", "dti"}:
-                out[field] = self.__to_float(val)
-            elif field in {"borrower_id", "loan_id", "loan_amount", "loan_term", "days_late",
-                           "children", "months_at_current_employer",
-                           "years_working_total", "number_of_employees",
-                           "company_age_years", "birth_year"}:
-                out[field] = self.__to_int(val)
+            elif field_name in {"loan_amount", "monthly_payment", "outstanding_principal", "repaid_principal",
+                                "outstanding_interest", "repaid_interest", "arrears", "delay_interest",
+                                "annual_revenue", "annual_profit", "shareholders_equity", "interest_rate",
+                                "borrower_income", "borrower_liabilities", "spouse_income",
+                                "spouse_liabilities", "family_income", "family_liabilities",
+                                "collateral_market_value", "dti"}:
+                out[field_name] = self.__to_float(val)
+            elif field_name in {"borrower_id", "loan_id", "loan_amount", "loan_term", "days_late",
+                                "children", "months_at_current_employer",
+                                "years_working_total", "number_of_employees",
+                                "company_age_years", "birth_year"}:
+                out[field_name] = self.__to_int(val)
             else:
-                out[field] = None if val in (None, "") else val
+                out[field_name] = None if val in (None, "") else val
         return out
 
     @staticmethod
@@ -395,18 +391,18 @@ class XLSXLoanParser(LoanParser):
         return s.strip().lower()
 
     @staticmethod
-    def __to_float(x):
+    def __to_float(x: str | float | None) -> float | str | None:
         if x in (None, ""):
             return None
         try:
             if isinstance(x, str):
                 x = x.replace(" ", "").replace(",", ".")
-            return float(x)
+            return float(str(x))
         except (ValueError, TypeError):
             return "Not Valid float"
 
     @staticmethod
-    def __to_int(x):
+    def __to_int(x: str | int | float | None) -> int | str | None:
         if x in (None, ""):
             return None
         try:
@@ -417,7 +413,7 @@ class XLSXLoanParser(LoanParser):
             return "Not Valid int"
 
     @staticmethod
-    def __to_date(x):
+    def __to_date(x: Any) -> Any | date | datetime | str:
         if x in (None, ""):
             return None
         if isinstance(x, date):
@@ -432,8 +428,8 @@ class XLSXLoanParser(LoanParser):
         return "Not Valid date"
 
     @staticmethod
-    def __to_list_of_dict(val):
+    def __to_list_of_dict(val: Any | None) -> Any:
         try:
-            return ast.literal_eval(val)
+            return ast.literal_eval(str(val))
         except Exception:
             return "Not valid list of dicts"

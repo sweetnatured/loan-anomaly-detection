@@ -6,7 +6,7 @@ from typing import List, Dict
 from anomaly_detector.parser import Issue
 
 
-def anomaly_reporter(validated_issues: List[Dict[int, List[Issue]]], output_path: Path, dry_run: bool = False):
+def anomaly_reporter(validated_issues: List[Dict[int, List[Issue]]], output_path: Path, dry_run: bool = False) -> None:
 
     if dry_run:
         for issues_per_loan in validated_issues:
