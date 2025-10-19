@@ -1,12 +1,12 @@
 import csv
 import logging
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Any, Generator
 
 from anomaly_detector.parser import Issue
 
 
-def anomaly_reporter(validated_issues: List[Dict[int, List[Issue]]], output_path: Path, dry_run: bool = False) -> None:
+def anomaly_reporter(validated_issues: Generator[Any, Any, None], output_path: Path, dry_run: bool = False) -> None:
 
     if dry_run:
         for issues_per_loan in validated_issues:
@@ -40,6 +40,5 @@ def anomaly_reporter(validated_issues: List[Dict[int, List[Issue]]], output_path
                             "field": issue.field,
                             "message": issue.message,
                             "value": issue.value,
-
                         }
                         writer.writerow(row)

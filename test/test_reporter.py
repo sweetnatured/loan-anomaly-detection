@@ -1,9 +1,9 @@
 import csv
 import tempfile
 from pathlib import Path
-from typing import List, Dict
+from typing import List
 
-from anomaly_detector.parser import Issue, LoanRecord
+from anomaly_detector.parser import LoanRecord
 from anomaly_detector.reporter import anomaly_reporter
 
 test_output_anomalities = Path(__file__).absolute().parent / "data" / "test_output_anomalities.csv"
@@ -11,14 +11,11 @@ test_output_anomalities = Path(__file__).absolute().parent / "data" / "test_outp
 
 def test_reporter(parsed_loans: List[LoanRecord]) -> None:
 
-    validated_issues: List[Dict[int, List[Issue]]] = []
     xirr_sensitivity = 0.07
-
-    for parsed_loan in parsed_loans:
-        validated_issues.append(parsed_loan.validate(xirr_sensitivity))
+    validated_issues_generator = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
 
     with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", prefix="loan_anomalies_output") as tmp_file_io:
-        anomaly_reporter(validated_issues, Path(tmp_file_io.name))
+        anomaly_reporter(validated_issues_generator, Path(tmp_file_io.name))
 
         with open(tmp_file_io.name, mode='r') as csv_file:
             csv_reader = csv.DictReader(csv_file)

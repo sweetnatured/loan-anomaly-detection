@@ -2,8 +2,8 @@ from openpyxl import load_workbook, Workbook
 from itertools import cycle, islice
 
 source_path = "loans.xlsx"
-target_path = "expanded_loans.xlsx"
-target_rows = 100_000
+target_path = "expanded_loans_500k.xlsx"
+target_rows = 500_000
 
 src_wb = load_workbook(source_path, data_only=True, read_only=True)
 src_ws = src_wb.active

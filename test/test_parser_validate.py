@@ -4,12 +4,12 @@ from anomaly_detector.parser import LoanRecord
 
 
 def test_validate(parsed_loans: List[LoanRecord]) -> None:
-    validated_issues = []
     xirr_sensitivity = 0.07
-    for parsed_loan in parsed_loans:
-        validated_issues.append(parsed_loan.validate(xirr_sensitivity))
+    validated_issues_generator = (parsed_loan.validate(xirr_sensitivity) for parsed_loan in parsed_loans)
 
-    assert len(validated_issues) == 72
+    validated_issues = list(validated_issues_generator)
+    assert len(list(validated_issues)) == 72
+
 
     error_counter = 0
     for issues_per_loan in validated_issues:

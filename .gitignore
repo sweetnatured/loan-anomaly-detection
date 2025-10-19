@@ -10,3 +10,5 @@ index_exporter/__pycache__/
 /anomaly_detector/anomlies.csv
 /file_augmenter/
 /example_output_extended.csv
+/anomalies_output_72.csv
+/anomalies_output_1M.csv

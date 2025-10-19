@@ -334,7 +334,7 @@ class XLSXLoanParser(LoanParser):
         headers = [self.__norm(str(c.value)) if c.value is not None else "" for c in header_cells]
         enumerated_headers = {i: h for i, h in enumerate(headers) if h}
 
-        records: list[LoanRecord] = []
+        #records: list[LoanRecord] = []
 
         for row in loan_file.iter_rows(min_row=2, values_only=True):
             row_dict = {enumerated_headers[i]: row[i] for i in enumerated_headers.keys()}
@@ -350,16 +350,16 @@ class XLSXLoanParser(LoanParser):
             if not borrower_id or not loan_id:
                 continue
 
-            record = LoanRecord(
+            yield LoanRecord(
                 borrower=BorrowerInfo(**borrower_kwargs),
                 loan=LoanInfo(**loan_kwargs),
                 repayment=RepaymentInfo(**repay_kwargs),
                 company=CompanyInfo(**company_kwargs),
                 collateral=CollateralInfo(**coll_kwargs),
             )
-            records.append(record)
+            # records.append(record)
 
-        return records
+        #return records
 
     def __extract(self, fields_map: Dict[str, str], row: Dict[str, Any]) -> Dict[str, Any]:
         out: Dict[str, Any] = {}
